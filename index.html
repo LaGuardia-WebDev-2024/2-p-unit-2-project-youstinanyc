@@ -1,12 +1,12 @@
 <!--Unit 2 Project
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
-[  ] Three Images
+[ yes ] Two Element Selectors
+[ yes ] Two ID Selectors
+[ yes ] Two Class Selectors
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include Border Radius CSS Property 
+[ yes ] Feature 1 - Include Border Radius CSS Property 
 [ no ] Feature 2 - Include a Static Background Image
 [ no ] Feature 3 - Include An Animated Background Color Change
 [ no ] Feature 4 - Embed YouTube Video 
@@ -18,24 +18,49 @@ Select ONE Additional Feature to Add
     <head>
         <meta charset="utf-8">
         <title>Sleepy Hallow!</title>
-    </head> 
     <style>
-      body {background-color:rgb(95, 3, 107);}
+       body{
+        background-color:rgb(95, 3, 107);
+      }
     h1 {color: rgb(245, 111, 2);}
     p{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-    p{color: rgb(247, 134, 5);}
+     #pumpkin1, #pumpkin2 {
+      color: rgb(247, 134, 5);
+    }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+    }
+    .spooky {border: 5px dotted #E57D12}
+    #halloween {color: #F50505}
+    #frieght {color:#ff8000}
+    #BOO {color:yellow}
+    #bloody {color:chartreuse}
+    #scary {color:aqua}
+    #haunted {color:rgb(171, 81, 255)}
+    #october {color:rgb(255, 37, 255)}
+    #twilight {color:hotpink}
     </style>
-    <h1> Why Sleepy Hallow Is A Really Cool Place </h1>
+</head> 
     <body>
-    <img class="spooky"  src="https://www.messynessychic.com/wp-content/uploads/2022/09/signoctober-930x1164.jpeg" width="400" alt="sign of sleepy hallow">
-       <p>Halloween in Sleepy Hollow has something for everyone: haunted hayrides, Gothic mansions, blazing pumpkins, farmers markets, live music, street fairs, our famous Halloween 10K run (costumes welcome!), Halloween parade, and of course, the Headless Horseman!</p>
-        
-       <img class="spooky" src="https://visitsleepyhollow.com/wp-content/uploads/2024/07/headless-horseman-corinth-768x513.jpg" alt="headless horseman lol" width="400">
-       <img class="spooky" style="float:left" src="https://visitsleepyhollow.com/wp-content/uploads/bb-plugin/cache/Blaze-scaled-landscape-3056e2b522f35b83956d824f72c812a1-60c11ebade85c.jpg" alt="jack o lanturns in sleepy hallow" width="400" 
-        
-
-
-
-
+    <h1>  Reasons why i wanna visit Sleepy Hallow🎃</h1>
+    <div class="image-row">
+    <img class="spooky" src="https://www.messynessychic.com/wp-content/uploads/2022/09/signoctober-930x1164.jpeg" style= float:left; width="300" alt="sign of sleepy hallow">
+       <img class="spooky" src="https://visitsleepyhollow.com/wp-content/uploads/2024/07/headless-horseman-corinth-768x513.jpg" alt="headless horseman lol" text-align: center; width="400">
+       <img class="spooky" src="https://visitsleepyhollow.com/wp-content/uploads/bb-plugin/cache/Blaze-scaled-landscape-3056e2b522f35b83956d824f72c812a1-60c11ebade85c.jpg" alt="jack o lanturns in sleepy hallow" style= float:right; width="400" >
+    </div>
+       <p id= "pumpkin1"> Halloween in Sleepy Hollow seems like such a fun time and it has something for everyone: haunted hayrides, Gothic mansions, blazing pumpkins, farmers markets, live music, street fairs, and the famous Halloween 10K run in costumes, Halloween parade, and of course, the Headless Horseman!</p>
+       <p id= "pumpkin2">list of the activites/events i'd do first as soon as I visit Sleepy Hallow:</p>
+       <ol>
+        <li id= "halloween" >The great Jack O Lanturn blaze</li>
+        <li id="frieght" > Sleepy Hallow street fair</li>
+        <li id="BOO" > Music Hall ghost tours</li>
+        <li id="bloody" > paint a headless horseman pumpkin</li>
+        <li id="scary" > glass pumpkin patch</li>
+        <li id="haunted" > Irving's Legend storytelling</li>
+        <li id="october"> octoberfest</li>
+        <li id="twilight" > Twilight village at Sleepy Hallow</li>
+       </ol>
     </body>
-</html>
